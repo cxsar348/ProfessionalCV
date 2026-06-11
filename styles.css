@@ -476,9 +476,15 @@ a {
 
 /* Breakpoint: Tablets and below */
 @media (max-width: 768px) {
-  /* Header remains visible at the top of the page */
+  /* Header remains visible and static at the top of the page */
   header {
     display: block;
+  }
+
+  .site-header {
+    position: static;
+    top: auto;
+    width: 100%;
   }
 
   .page-shell {
@@ -590,23 +596,6 @@ a {
 
   .viewer-frame iframe {
     min-height: 420px;
-  }
-}
-
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .education-list {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline-item {
-    flex-direction: column;
-  }
-
-  .timeline-date {
-    min-width: 0;
   }
 }
 
