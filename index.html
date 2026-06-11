@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae | César Paredes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SECTION: PAGE SHELL
+       PURPOSE: Provide the main structural container for the CV website.
+       BEHAVIOR: Wraps header, navigation, content sections, and footer. -->
+  <div class="page-shell" id="page-shell">
+
+    <!-- SECTION: HEADER
+         PURPOSE: Hero introduction with name, title, and quick actions.
+         BEHAVIOR: Includes brand, dark mode toggle, nav links, and primary resume callouts. -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-block">
+          <p class="brand-label" data-i18n-key="brand-label">Personal CV</p>
+          <h1 class="brand-title" data-i18n-key="brand-title">César Paredes</h1>
+          <p class="brand-subtitle" data-i18n-key="brand-subtitle">Analista de Gestión Financiera y Control Administrativo</p>
+        </div>
+
+        <div class="header-actions">
+          <button class="toggle-button" id="theme-toggle" type="button" aria-label="Toggle theme">
+            <span class="toggle-icon">🌙</span>
+            <span class="toggle-text" data-i18n-key="toggle-dark">Dark Mode</span>
+          </button>
+          <button class="toggle-button" id="language-toggle" type="button" aria-label="Toggle language">
+            <span class="toggle-icon">🌐</span>
+            <span class="toggle-text" data-i18n-key="language-en">English</span>
+          </button>
+          <a class="download-link" href="curriculum.pdf" download="Osiris_CV.pdf" data-i18n-key="download-cv">Descargar CV</a>
+        </div>
+      </div>
+
+      <nav class="page-nav" aria-label="Primary site navigation">
+        <a class="nav-link" href="#about" data-i18n-key="nav-about">Perfil Profesional</a>
+        <a class="nav-link" href="#experience" data-i18n-key="nav-experience">Experiencia</a>
+        <a class="nav-link" href="#skills" data-i18n-key="nav-skills">Skills</a>
+        <a class="nav-link" href="#education" data-i18n-key="nav-education">Educación</a>
+        <a class="nav-link" href="#contact" data-i18n-key="nav-contact">Contacto</a>
+      </nav>
+      <!-- Language selector moved into header actions; removed floating language callout -->
+    </header>
+
+    <!-- SECTION: ABOUT
+         PURPOSE: Provide a concise personal summary and context.
+         BEHAVIOR: Export a hero-style introduction with a subtle subtitle. -->
+    <main class="main-content">
+      <section class="section section-about reveal" id="about">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="about-label">Perfil Profesional</p>
+          <h2 class="section-title" data-i18n-key="about-title">Resumen Ejecutivo</h2>
+          <p class="section-copy" data-i18n-key="about-copy">
+            Analista de Gestión Financiera y Control Administrativo con experiencia en gestión financiera, conciliaciones bancarias, control documental y cumplimiento tributario. Especializado en la optimización de procesos mediante herramientas tecnológicas, automatización de tareas y análisis de datos. Capacidad para transformar procesos operativos en sistemas más eficientes, garantizando precisión financiera, reducción de errores y apoyo estratégico para la toma de decisiones empresariales.
+          </p>
+          <div class="about-grid">
+            <div class="about-card">
+              <h3 data-i18n-key="about-objectives-title">Objetivos</h3>
+              <p data-i18n-key="about-objectives-copy">Comprensión total de los procesos y las tareas e integrar análisis y tecnología para impulsar la productividad empresarial y eficiencia operativa.</p>
+            </div>
+            <div class="about-card">
+              <h3 data-i18n-key="about-approach-title">Enfoque profesional</h3>
+              <p data-i18n-key="about-approach-copy">Aplicar soluciones basadas en datos, automatización y control financiero para simplificar procesos y maximizar resultados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: EXPERIENCE
+           PURPOSE: Show career timeline and key roles.
+           BEHAVIOR: Presents work history in a readable vertical timeline. -->
+      <section class="section section-experience reveal" id="experience">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="experience-label">Experiencia</p>
+          <h2 class="section-title" data-i18n-key="experience-title">Professional timeline</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-date">09-2025 - 06-2026</span>
+              <div class="timeline-content">
+                <h3>Barrios y Asociados C.A.</h3>
+                <p data-i18n-key="experience-item-1-copy">
+                Gestión de conciliaciones bancarias y registro de operaciones financieras, asegurando la correcta trazabilidad contable. Organización y control de documentación contable y administrativa para optimizar su acceso y gestión. Implementación de herramientas tecnológicas y automatización de procesos, logrando una reducción del 30% en tiempos operativos. Apoyo en la mejora de procesos administrativos, manejo de información confidencial y cumplimiento de obligaciones fiscales y parafiscales para múltiples empresas.
+                </p>
+                <p></p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2024 - 2025</span>
+              <div class="timeline-content">
+                <h3>GOLF SUITES C.A.</h3>
+                <p data-i18n-key="experience-item-2-copy">
+                Elaboración y análisis de estados financieros mensuales, contribuyendo a la evaluación del desempeño económico. Control y seguimiento de cuentas por cobrar y pagar, asegurando la correcta gestión del flujo de caja. Preparación de reportes financieros para la toma de decisiones gerenciales, optimización de procesos contables y coordinación con auditorías internas y externas.
+                </p>
+                <p></p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2015 - 2021</span>
+              <div class="timeline-content">
+                <h3>MAPB C.A.</h3>
+                <p data-i18n-key="experience-item-3-copy">
+                Registro y conciliación de movimientos bancarios, garantizando la consistencia de la información financiera. Elaboración y control de facturas, presupuestos y órdenes de compra. Gestión y actualización de inventarios físicos y digitales. Apoyo en la preparación de reportes financieros mensuales, administración de cobros y pagos a proveedores, e implementación de sistemas de archivo físico y digital para mejorar la eficiencia operativa.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2015 - 2021</span>
+              <div class="timeline-content">
+                <h3>Carnicería Brasa y Leña C.A.</h3>
+                <p data-i18n-key="experience-item-4-copy">
+                Registro y conciliación de movimientos bancarios, garantizando la consistencia de la información financiera. Elaboración y control de facturas, presupuestos y órdenes de compra. Gestión y actualización de inventarios físicos y digitales. Apoyo en la preparación de reportes financieros mensuales, administración de cobros y pagos a proveedores, e implementación de sistemas de archivo físico y digital para mejorar la eficiencia operativa.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: SKILLS
+           PURPOSE: Display key skills in a structured grid.
+           BEHAVIOR: Groups strengths into skill categories for at-a-glance scanning. -->
+      <section class="section section-skills reveal" id="skills">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="skills-label">Skills</p>
+          <h2 class="section-title" data-i18n-key="skills-title">Habilidades</h2>
+          <div class="skills-grid">
+            <div class="skill-item" data-i18n-key="skill_html">HTML</div>
+            <div class="skill-item" data-i18n-key="skill_css">CSS</div>
+            <div class="skill-item" data-i18n-key="skill_ollama">Ollama (IA local)</div>
+            <div class="skill-item" data-i18n-key="skill_hermes">Hermes Agent (Asistente IA)</div>
+            <div class="skill-item" data-i18n-key="skill_excel">Excel avanzado</div>
+            <div class="skill-item" data-i18n-key="skill_proactividad">Proactividad</div>
+            <div class="skill-item" data-i18n-key="skill_soft">Habilidades blandas</div>
+            <div class="skill-item" data-i18n-key="skill_sql">SQL (análisis de datos)</div>
+            <div class="skill-item" data-i18n-key="skill_presion">Trabajo bajo presión</div>
+            <div class="skill-item" data-i18n-key="skill_critico">Pensamiento crítico</div>
+            <div class="skill-item" data-i18n-key="skill_gcp">Google Cloud (GCP)</div>
+            <div class="skill-item" data-i18n-key="skill_lateral">Pensamiento lateral</div>
+            <div class="skill-item" data-i18n-key="skill_equipo">Trabajo en equipo</div>
+            <div class="skill-item" data-i18n-key="skill_detalle">Atención al detalle</div>
+            <div class="skill-item" data-i18n-key="skill_openclaw">Open Claw</div>
+            <div class="skill-item" data-i18n-key="skill_resolucion">Resolución de problemas</div>
+            <div class="skill-item" data-i18n-key="skill_adaptacion">Capacidad de adaptación</div>
+            <div class="skill-item" data-i18n-key="skill_aws">Amazon Web Services (AWS)</div>
+            <div class="skill-item" data-i18n-key="skill_aprendizaje">Capacidad de aprendizaje</div>
+            <div class="skill-item" data-i18n-key="skill_ofimatica">Herramientas de ofimática</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: EDUCATION
+           PURPOSE: Outline academic background and certifications.
+           BEHAVIOR: Uses clean cards to display school and credential details. -->
+      <section class="section section-education reveal" id="education">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="education-label">Educación</p>
+          <h2 class="section-title" data-i18n-key="education-title">Aprendizaje y Desarrollo</h2>
+          <div class="education-list">
+            <article class="education-card">
+              <h2 data-i18n-key="education-degree-1">Contaduría Pública</h2>
+              <p data-i18n-key="education-degree-1-year">UNETRANS 2021 - Presente</p>
+            </article>
+            <article class="education-card">
+              <h2 data-i18n-key="education-degree-2">Administración Informática</h2>
+              <p data-i18n-key="education-degree-2-year">UNERS 2024 - Presente</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION: REFERENCES
+           PURPOSE: Present professional references clearly.
+           BEHAVIOR: Uses compact cards similar to the rest of the site. -->
+      <section class="section section-reference reveal" id="references">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="references-label">Referencias</p>
+          <h2 class="section-title" data-i18n-key="references-title">Referencias Profesionales</h2>
+          <p class="section-copy" data-i18n-key="references-copy">Referencias disponibles a solicitud. Puedo proporcionar contactos de supervisores anteriores y colegas que pueden dar fe de mi ética de trabajo, habilidades y contribuciones en roles anteriores. No dudes en solicitar esta información durante el proceso de entrevista para obtener una visión más completa de mi desempeño profesional.</p>
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>Jhonny Guirigay</h3>
+              <p>+58 412 391 0068</p>
+            </div>
+            <div class="about-card">
+              <h3>Robert Cedeño</h3>
+              <p>+58 424 683 9910</p>
+            </div>
+            <div class="about-card">
+              <h3>Yeraldin Barrios</h3>
+              <p>+58 412 960 6093</p>
+            </div>
+            <div class="about-card">
+              <h3>Edixon Zambrano</h3>
+              <p>+58 414 611 5553</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: CONTACT
+           PURPOSE: Provide contact details and invite next steps.
+           BEHAVIOR: Includes an email link and a gentle closing note. -->
+      <section class="section section-contact reveal" id="contact">
+        <div class="section-inner section-contact-inner">
+          <p class="section-label" data-i18n-key="contact-label">Contacto</p>
+          <h2 class="section-title" data-i18n-key="contact-title">Let’s connect</h2>
+          <p class="section-copy" data-i18n-key="contact-copy">Si te gustó mi perfil y crees que pueda encajar en su equipo, contáctame por cualquiera de estos medios.</p>
+          <a class="contact-button" href="mailto:cesarparedesmoreno@gmail.com" aria-label="Enviar correo">
+            <span class="button-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8.24L12 13L4 8.24V6L12 10.76L20 6V8.24Z"/>
+              </svg>
+            </span>
+            cesarparedesmoreno@gmail.com
+          </a>
+          <a class="contact-button" href="tel:+584241733177" aria-label="Llamar teléfono">
+            <span class="button-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.27 15.32C15.55 15.05 15.95 14.96 16.33 15.05C17.5 15.36 18.77 15.53 20.08 15.53C20.6 15.53 21 15.93 21 16.45V20.08C21 20.6 20.6 21 20.08 21C10.25 21 3 13.75 3 3.92C3 3.4 3.4 3 3.92 3H7.55C8.07 3 8.47 3.4 8.47 3.92C8.47 5.23 8.64 6.5 8.95 7.67C9.04 8.05 8.95 8.45 8.68 8.73L6.62 10.79Z"/>
+              </svg>
+            </span>
+            +58 424 173 3177
+          </a>
+          <a class="contact-button" href="https://wa.me/qr/LJYYI2BDGCF5P1" target="_blank" rel="noreferrer noopener" aria-label="Abrir WhatsApp">
+            <span class="button-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.672.149-.2.297-.772.967-.947 1.164-.174.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.655-2.059-.174-.297-.019-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.672-1.612-.92-2.207-.242-.579-.487-.5-.672-.51l-.573-.01c-.2 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.475 0 1.458 1.065 2.871 1.213 3.069.149.198 2.095 3.2 5.077 4.487.71.306 1.262.489 1.693.626.71.226 1.356.194 1.867.118.57-.085 1.758-.719 2.007-1.413.248-.694.248-1.289.173-1.413-.075-.124-.273-.198-.57-.347m-5.421 7.175h-.001c-3.317 0-5.787-1.738-7.264-3.525l-.52-.605 1.09-3.163.54-.398c.148-.099.33-.148.524-.074.574.225 1.812.892 2.108.994.297.099.51.074.706-.074.298-.148.997-.365 1.457-.449.459-.074.88-.05 1.25.149.372.198 1.39.51 1.63.622.248.124.43.186.623.05.198-.124.872-.319 1.664-.992.616-.55 1.03-1.228 1.154-1.427.124-.198.012-.305-.087-.403-.099-.099-.223-.248-.347-.372-.124-.124-.298-.323-.447-.497-.149-.174-.298-.198-.447-.248-.148-.05-.32-.012-.471.012-.148.025-.397.149-.597.372-.2.223-.795.776-.975 1.045-.165.248-.33.248-.662.074-.33-.174-1.387-.513-2.64-1.594-1.014-.868-1.697-1.94-1.897-2.189-.198-.248-.02-.383.135-.524.149-.124.33-.323.496-.496.165-.174.223-.298.33-.497.099-.198.05-.372-.025-.521-.075-.149-.672-1.612-.92-2.207-.242-.579-.487-.5-.672-.51l-.573-.01c-.2 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.475 0 1.458 1.065 2.871 1.213 3.069.149.198 2.095 3.2 5.077 4.487.71.306 1.262.489 1.693.626.71.226 1.356.194 1.867.118.57-.085 1.758-.719 2.007-1.413.248-.694.248-1.289.173-1.413-.075-.124-.273-.198-.57-.347"/>
+              </svg>
+            </span>
+            WhatsApp
+          </a>
+          <a class="contact-button" href="https://t.me/cxsar348" target="_blank" rel="noreferrer noopener" aria-label="Abrir Telegram">
+            <span class="button-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 3L2 9l7.5 2.5L10 20l4-3 5.5 4L22 3z"/>
+              </svg>
+            </span>
+            Telegram
+          </a>
+          <a class="contact-button" href="https://www.linkedin.com/in/cxsar348/" target="_blank" rel="noreferrer noopener" aria-label="Abrir LinkedIn">
+            <span class="button-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.98 3.5C4.98 4.88 3.92 6 2.5 6S0 4.88 0 3.5 1.06 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5V24H0V8.5zm7.5 0h4.8V24H7.5V8.5zm6.3 0h4.6v2.2h.08c.64-1.2 2.2-2.5 4.5-2.5 4.8 0 5.7 3.2 5.7 7.4V24h-4.8v-6.8c0-1.6-.03-3.7-2.2-3.7-2.2 0-2.6 1.8-2.6 3.6V24h-4.8V8.5z"/>
+              </svg>
+            </span>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION: PDF VIEWER
+           PURPOSE: Embed the CV PDF directly in the page.
+           BEHAVIOR: Uses a local PDF asset and provides a fallback download link. -->
+      <section class="section section-pdf reveal" id="pdf-viewer">
+        <div class="section-inner">
+          <p class="section-label" data-i18n-key="pdf-label">CV Standar</p>
+          <h2 class="section-title" data-i18n-key="pdf-title">CV preview</h2>
+          <div class="viewer-frame">
+            <iframe src="curriculum.pdf" title="Curriculum Vitae PDF" frameborder="0"></iframe>
+          </div>
+          <p class="viewer-note" data-i18n-key="viewer-note">Si la vista previa del PDF no es visible, puedes descargarlo haciendo click en el botón de descarga.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION: FOOTER
+         PURPOSE: Conclude the page with a subtle footer note.
+         BEHAVIOR: Provides a small copyright and page status. -->
+    <footer class="site-footer">
+      <p>© 2026 Osiris Project by César Paredes.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
