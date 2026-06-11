@@ -476,9 +476,9 @@ a {
 
 /* Breakpoint: Tablets and below */
 @media (max-width: 768px) {
-  /* Header hidden on mobile */
+  /* Header remains visible at the top of the page */
   header {
-    display: none;
+    display: block;
   }
 
   .page-shell {
