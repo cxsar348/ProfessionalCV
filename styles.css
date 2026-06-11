@@ -468,21 +468,130 @@ a {
   color: var(--text-muted);
 }
 
-/* SECTION: RESPONSIVE RULES
-   PURPOSE: Improve layout on smaller devices.
-   BEHAVIOR: Adjusts grid structure, spacing, and header layout. */
+/* =========================
+   MOBILE RESPONSIVE LAYOUT
+   PURPOSE: Adapt desktop layout to smartphone screens
+   BEHAVIOR: Overrides only, no structural changes
+   ========================= */
 
-@media (max-width: 900px) {
-  .site-header,
+/* Breakpoint: Tablets and below */
+@media (max-width: 768px) {
+  /* Header hidden on mobile */
+  header {
+    display: none;
+  }
+
+  .page-shell {
+    padding: 20px 16px 28px;
+  }
+
+  .site-footer {
+    margin-top: 0;
+  }
+
+  .main-content > .section {
+    margin-bottom: 30px;
+  }
+
   .section-inner {
-    padding: 22px;
+    padding: 24px;
+  }
+
+  .section-copy {
+    max-width: 100%;
   }
 
   .about-grid,
   .skills-grid,
-  .education-list {
+  .education-list,
+  .section-contact-inner {
     grid-template-columns: 1fr;
   }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-contact-inner {
+    gap: 18px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .timeline-date {
+    min-width: 0;
+  }
+
+  .viewer-frame {
+    min-height: auto;
+    max-height: none;
+  }
+
+  .viewer-frame iframe {
+    min-height: 360px;
+    aspect-ratio: auto;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Breakpoint: Small phones */
+@media (max-width: 480px) {
+  .page-shell {
+    padding: 18px 14px 24px;
+  }
+
+  .section-inner {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .section-copy {
+    margin-top: 18px;
+  }
+
+  .about-card,
+  .skill-item,
+  .education-card,
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .timeline-item {
+    gap: 14px;
+  }
+
+  .timeline-date {
+    font-size: 0.95rem;
+  }
+
+  .contact-button {
+    padding: 12px 14px;
+    min-height: auto;
+  }
+
+  .button-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .viewer-frame {
+    min-height: 420px;
+  }
+
+  .viewer-frame iframe {
+    min-height: 420px;
+  }
+}
 
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
