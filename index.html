@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="César Paredes — Analista de Datos y Automatización / Analista Administrativo y Contable." />
+  <title>César Paredes — Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV (screen only) -->
+  <header class="nav no-print" id="top">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">
+        <span class="monogram" aria-hidden="true">CP</span>
+        <span class="nav-name">César Paredes</span>
+      </a>
+
+      <nav class="nav-links" role="tablist" aria-label="Profile selector">
+        <!-- Perfil Tech oculto temporalmente: quita el atributo "hidden" de este botón
+             (y del panel #profile-tech) para reactivarlo. -->
+        <button class="profile-tab" id="tab-tech" type="button" role="tab" hidden
+                aria-selected="false" aria-controls="profile-tech" data-profile="tech">
+          <span class="plus" aria-hidden="true">+</span><span data-i18n-key="tab-tech">Perfil Tech</span>
+        </button>
+        <button class="profile-tab is-active" id="tab-admin" type="button" role="tab"
+                aria-selected="true" aria-controls="profile-admin" data-profile="admin">
+          <span class="plus" aria-hidden="true">+</span><span data-i18n-key="tab-admin">Perfil Administrativo</span>
+        </button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="toggle-icon" aria-hidden="true">🌙</span>
+          <span class="toggle-text" data-i18n-key="toggle-dark">Modo oscuro</span>
+        </button>
+        <button class="icon-btn" id="language-toggle" type="button" aria-label="Toggle language">
+          <span class="toggle-icon" aria-hidden="true">🌐</span>
+          <span class="toggle-text" data-i18n-key="language-en">English</span>
+        </button>
+        <button class="action-primary" id="download-btn" type="button" data-i18n-key="download-cv">Descargar PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- ============================ TECH ============================ -->
+    <article class="panel" id="profile-tech" data-profile-panel="tech" aria-labelledby="tab-tech" hidden>
+      <section class="hero">
+        <p class="hero-eyebrow">
+          <span data-i18n-key="name">César Paredes</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span class="muted" data-i18n-key="tech-title">Analista de Datos y Automatización</span>
+        </p>
+        <h1 class="hero-heading">
+          <span class="line-clip"><span class="line-clip-inner hero-dim" data-i18n-key="tech-hero-1">La precisión</span></span>
+          <span class="line-clip" style="--line-delay: 90ms"><span class="line-clip-inner" data-i18n-key="tech-hero-2">es solo el punto de partida.</span></span>
+          <span class="line-clip" style="--line-delay: 180ms"><span class="line-clip-inner">
+            <span data-i18n-key="tech-hero-prefix">Diseño</span>
+            <span class="hero-word" data-words-key="tech-hero-words" aria-hidden="true"><span class="hero-word-track"></span></span>
+            <span class="print-only" data-i18n-key="tech-hero-word">automatizaciones</span>
+            <span data-i18n-key="tech-hero-suffix">que funcionan.</span>
+          </span></span>
+        </h1>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span><span data-i18n-key="status">Disponible para nuevas oportunidades</span></p>
+        <p class="resume-contact">
+          <span>cesarparedesmoreno@gmail.com</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <span>+58 424-1733177</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <span data-i18n-key="location">San Antonio de los Altos, Miranda, Venezuela</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <a href="https://www.linkedin.com/in/cxsar348/" target="_blank" rel="noreferrer noopener">linkedin.com/in/cxsar348</a>
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-exp-label">Experiencia</span><span class="stat-value" data-i18n-key="stat-exp-value">+6 años</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-loc-label">Ubicación</span><span class="stat-value" data-i18n-key="stat-loc-value">Venezuela</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-focus-label">Especialidad</span><span class="stat-value" data-i18n-key="stat-focus-tech">Datos y automatización</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-lang-label">Idiomas</span><span class="stat-value" data-i18n-key="stat-lang-value">ES · EN (B1)</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--profile reveal" data-num="01">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">01</span></div>
+            <p class="cat-name" data-i18n-key="sec-summary-label">Perfil</p>
+            <p class="cat-meta" data-i18n-key="sec-summary-meta">Cómo pienso y trabajo</p>
+            <p class="cat-stat" data-i18n-key="sec-summary-stat">+6 años de experiencia</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-summary">Resumen Profesional</h2>
+            <p class="summary reveal" data-i18n-key="tech-summary">Analista con formación en Contaduría Pública y Administración Informática, orientado a la optimización de procesos mediante datos y tecnología. Experiencia en SQL, Excel avanzado, Google Cloud, AWS y herramientas de inteligencia artificial local para automatizar tareas, diseñar reportes y reducir tiempos operativos.</p>
+            <div class="about-grid">
+              <div class="about-card reveal"><h3 data-i18n-key="about-objectives-title">Objetivos</h3><p data-i18n-key="about-objectives-copy">Comprensión total de los procesos y las tareas e integrar análisis y tecnología para impulsar la productividad empresarial y eficiencia operativa.</p></div>
+              <div class="about-card reveal"><h3 data-i18n-key="about-approach-title">Enfoque profesional</h3><p data-i18n-key="about-approach-copy">Aplicar soluciones basadas en datos, automatización y control financiero para simplificar procesos y maximizar resultados.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--skills reveal" data-num="02">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">02</span></div>
+            <p class="cat-name" data-i18n-key="sec-skills-label">Habilidades</p>
+            <p class="cat-meta" data-i18n-key="sec-skills-meta">Herramientas que uso a diario</p>
+            <p class="cat-stat" data-i18n-key="sec-skills-stat">5 áreas · +18 habilidades</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-skills">Habilidades</h2>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="tech-cat-1">Datos y Análisis:</span><span class="skill-values" data-i18n-key="tech-skills-1">SQL, Excel avanzado (tablas dinámicas), Análisis de datos, Elaboración de reportes</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="tech-cat-2">Desarrollo Web:</span><span class="skill-values" data-i18n-key="tech-skills-2">HTML, CSS</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="tech-cat-3">Cloud y Plataformas:</span><span class="skill-values" data-i18n-key="tech-skills-3">Google Cloud (GCP), Amazon Web Services (AWS)</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="tech-cat-4">Automatización e IA:</span><span class="skill-values" data-i18n-key="tech-skills-4">Automatización de procesos, Prompt Engineering, IA aplicada, Ollama (IA local), Hermes Agent, Open Claw</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="tech-cat-5">Habilidades Blandas:</span><span class="skill-values" data-i18n-key="tech-skills-5">Resolución de problemas, Pensamiento crítico, Trabajo en equipo, Adaptabilidad, Atención al detalle</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--experience reveal" data-num="03">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">03</span></div>
+            <p class="cat-name" data-i18n-key="sec-experience-label">Experiencia</p>
+            <p class="cat-meta" data-i18n-key="sec-experience-meta">Dónde y qué he hecho</p>
+            <p class="cat-stat" data-i18n-key="sec-experience-stat">4 roles · 2018—2026</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-experience">Experiencia Profesional</h2>
+            <div class="exp-list exp-list--timeline">
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job1-date">09/2025 – 06/2026</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="tech-job1-role">Analista de Automatización y Procesos</h3>
+                  <p class="job-company" data-i18n-key="job1-company">Barrios y Asociados C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="tech-job1-b1">Implementación de herramientas tecnológicas y automatización de procesos basados en AI y procesos ya existentes, reduciendo los tiempos operativos en un 30%.</li>
+                    <li data-i18n-key="tech-job1-b2">Diseño y mantenimiento de flujos de datos para conciliaciones bancarias y registro de operaciones, garantizando la trazabilidad contable.</li>
+                    <li data-i18n-key="tech-job1-b3">Automatización de la organización y control de documentación contable y administrativa para mejorar su acceso y gestión.</li>
+                    <li data-i18n-key="tech-job1-b4">Aseguramiento del manejo de información confidencial y el cumplimiento de obligaciones fiscales y parafiscales de múltiples empresas.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job2-date">2024 – 2025</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="tech-job2-role">Analista de Datos Financieros</h3>
+                  <p class="job-company" data-i18n-key="job2-company">GOLF SUITES C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="tech-job2-b1">Elaboración y análisis de estados financieros mensuales para evaluar el desempeño económico.</li>
+                    <li data-i18n-key="tech-job2-b2">Construcción de reportes financieros para la toma de decisiones gerenciales.</li>
+                    <li data-i18n-key="tech-job2-b3">Optimización de procesos contables mediante plantillas y automatizaciones en Excel.</li>
+                    <li data-i18n-key="tech-job2-b4">Coordinación con auditorías internas y externas aportando información trazable y verificable.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job3-date">2019 – 2023</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="tech-job3-role">Analista Administrativo y de Datos</h3>
+                  <p class="job-company" data-i18n-key="job3-company">MAPB C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="tech-job3-b1">Registro y conciliación de movimientos bancarios garantizando la consistencia de la información financiera.</li>
+                    <li data-i18n-key="tech-job3-b2">Gestión y actualización de inventarios físicos y digitales con control de datos.</li>
+                    <li data-i18n-key="tech-job3-b3">Elaboración y control de facturas, presupuestos y órdenes de compra.</li>
+                    <li data-i18n-key="tech-job3-b4">Implementación de sistemas de archivo físico y digital mejorando la eficiencia operativa.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job4-date">2018 – 2021</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="tech-job4-role">Asistente Administrativo</h3>
+                  <p class="job-company" data-i18n-key="job4-company">Carnicería Brasa y Leña C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="tech-job4-b1">Supervisión y validación de conciliaciones bancarias.</li>
+                    <li data-i18n-key="tech-job4-b2">Organización y control de documentación contable y administrativa.</li>
+                    <li data-i18n-key="tech-job4-b3">Supervisión y actualización de inventarios.</li>
+                    <li data-i18n-key="tech-job4-b4">Manejo de información confidencial y apoyo a la mejora de procesos administrativos.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--projects reveal" data-num="04">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">04</span></div>
+            <p class="cat-name" data-i18n-key="sec-projects-label">Proyectos</p>
+            <p class="cat-meta" data-i18n-key="sec-projects-meta">Lo que construyo y comparto</p>
+            <p class="cat-stat" data-i18n-key="sec-projects-stat">GitHub · @cxsar348</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-projects">Proyectos</h2>
+            <div class="proj-list" data-github="cxsar348"></div>
+            <a class="proj-profile" href="https://github.com/cxsar348" target="_blank" rel="noreferrer noopener" data-i18n-key="projects-cta">Ver todos los proyectos en GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--education reveal" data-num="05">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">05</span></div>
+            <p class="cat-name" data-i18n-key="sec-education-label">Educación</p>
+            <p class="cat-meta" data-i18n-key="sec-education-meta">Formación y estudios</p>
+            <p class="cat-stat" data-i18n-key="sec-education-stat">3 programas activos</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-education">Educación</h2>
+            <div class="exp-list">
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu1-year">2021 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu1-degree">Contaduría Pública</h3><p class="job-company" data-i18n-key="edu1-school">UNETRANS</p></div>
+              </div>
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu2-year">2024 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu2-degree">Administración Informática</h3><p class="job-company" data-i18n-key="edu2-school">UNERS</p></div>
+              </div>
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu3-year">2026 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu3-degree">Contaduría Pública</h3><p class="job-company" data-i18n-key="edu3-school">Universidad Central de Venezuela</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--languages reveal" data-num="06">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">06</span></div>
+            <p class="cat-name" data-i18n-key="sec-languages-label">Idiomas</p>
+            <p class="cat-meta" data-i18n-key="sec-languages-meta">Capacidad de comunicación</p>
+            <p class="cat-stat" data-i18n-key="sec-languages-stat">2 idiomas</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-languages">Idiomas</h2>
+            <div class="lang-list">
+              <div class="lang reveal">
+                <div class="lang-head">
+                  <span class="lang-name" data-i18n-key="lang-es-name">Español</span>
+                  <span class="lang-level" data-i18n-key="lang-es-level">Nativo</span>
+                </div>
+                <div class="lang-bar"><span class="lang-fill" style="--pct: 100%"></span></div>
+              </div>
+              <div class="lang reveal">
+                <div class="lang-head">
+                  <span class="lang-name" data-i18n-key="lang-en-name">Inglés</span>
+                  <span class="lang-level" data-i18n-key="lang-en-level">B1 · Intermedio</span>
+                </div>
+                <div class="lang-bar"><span class="lang-fill" style="--pct: 62%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--references reveal" data-num="07">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">07</span></div>
+            <p class="cat-name" data-i18n-key="sec-references-label">Referencias</p>
+            <p class="cat-meta" data-i18n-key="sec-references-meta">Quién respalda mi trabajo</p>
+            <p class="cat-stat" data-i18n-key="sec-references-stat">4 contactos</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-references">Referencias</h2>
+            <p class="reveal" data-i18n-key="references-copy">Referencias profesionales disponibles a solicitud.</p>
+            <div class="ref-list">
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">JG</span><span class="ref-info"><span class="ref-name">Jhonny Guirigay</span><span class="ref-phone">+58 412 391 0068</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">RC</span><span class="ref-info"><span class="ref-name">Robert Cedeño</span><span class="ref-phone">+58 424 683 9910</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">YB</span><span class="ref-info"><span class="ref-name">Jesús Borges</span><span class="ref-phone">+58 412 710 7070</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">EZ</span><span class="ref-info"><span class="ref-name">Edixon Zambrano</span><span class="ref-phone">+58 414 611 5553</span></span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- ========================== ADMIN =========================== -->
+    <article class="panel is-active" id="profile-admin" data-profile-panel="admin" aria-labelledby="tab-admin">
+      <section class="hero">
+        <p class="hero-eyebrow">
+          <span data-i18n-key="name">César Paredes</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span class="muted" data-i18n-key="admin-title">Analista Administrativo y financiero</span>
+        </p>
+        <h1 class="hero-heading">
+          <span class="line-clip"><span class="line-clip-inner hero-dim" data-i18n-key="admin-hero-1">La organización</span></span>
+          <span class="line-clip" style="--line-delay: 90ms"><span class="line-clip-inner" data-i18n-key="admin-hero-2">es donde nace la eficiencia.</span></span>
+          <span class="line-clip" style="--line-delay: 180ms"><span class="line-clip-inner">
+            <span data-i18n-key="admin-hero-prefix">Gestión de</span>
+            <span class="hero-word" data-words-key="admin-hero-words" aria-hidden="true"><span class="hero-word-track"></span></span>
+            <span class="print-only" data-i18n-key="admin-hero-word">conciliaciones</span>
+            <span data-i18n-key="admin-hero-suffix">con precisión.</span>
+          </span></span>
+        </h1>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span><span data-i18n-key="status">Disponible para nuevas oportunidades</span></p>
+        <p class="resume-contact">
+          <span>cesarparedesmoreno@gmail.com</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <span>+58 424-1733177</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <span data-i18n-key="location">San Antonio de los Altos, Miranda, Venezuela</span>
+          <span class="contact-sep" aria-hidden="true">•</span>
+          <a href="https://www.linkedin.com/in/cxsar348/" target="_blank" rel="noreferrer noopener">linkedin.com/in/cxsar348</a>
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-exp-label">Experiencia</span><span class="stat-value" data-i18n-key="stat-exp-value">+6 años</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-loc-label">Ubicación</span><span class="stat-value" data-i18n-key="stat-loc-value">Venezuela</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-focus-label">Especialidad</span><span class="stat-value" data-i18n-key="stat-focus-admin">Detección de errores y flujos administrativos</span></div>
+          <div class="stat"><span class="stat-label" data-i18n-key="stat-lang-label">Idiomas</span><span class="stat-value" data-i18n-key="stat-lang-value">ES · EN (B1) · IT (A1)S </span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--profile reveal" data-num="01">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">01</span></div>
+            <p class="cat-name" data-i18n-key="sec-summary-label">Perfil</p>
+            <p class="cat-meta" data-i18n-key="sec-summary-meta">Cómo pienso y trabajo</p>
+            <p class="cat-stat" data-i18n-key="sec-summary-stat">+6 años de experiencia</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-summary">Resumen Profesional</h2>
+            <p class="summary reveal" data-i18n-key="admin-summary">Analista con experiencia en gestión financiera, conciliaciones bancarias, control documental y cumplimiento tributario y parafiscal. Especializado en la optimización de procesos administrativos y en la elaboración de flujos de trabajo para aprovechar mejor los recursos. Enfocado en la precisión, la reducción de errores y el control interno.</p>
+            <div class="about-grid">
+              <div class="about-card reveal"><h3 data-i18n-key="about-objectives-title">Objetivos</h3><p data-i18n-key="about-objectives-copy">Comprensión total de los procesos y las tareas e integrar análisis y tecnología para impulsar la productividad empresarial y eficiencia operativa.</p></div>
+              <div class="about-card reveal"><h3 data-i18n-key="about-approach-title">Enfoque profesional</h3><p data-i18n-key="admin-about-approach-copy">Optimizar la arquitectura operacional mediante la reingeniería de procesos existentes, el análisis estratégico de datos, la automatización y el control financiero, orientando los esfuerzos a la eficiencia operativa y la maximización de rentabilidad.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--skills reveal" data-num="02">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">02</span></div>
+            <p class="cat-name" data-i18n-key="sec-skills-label">Habilidades</p>
+            <p class="cat-meta" data-i18n-key="sec-skills-meta">Herramientas que uso a diario</p>
+            <p class="cat-stat" data-i18n-key="sec-skills-stat">5 áreas · +18 habilidades</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-skills">Habilidades</h2>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="admin-cat-1">Gestión Financiera:</span><span class="skill-values" data-i18n-key="admin-skills-1">Conciliaciones bancarias, Cuentas por cobrar y pagar, Flujo de caja, Análisis financiero</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="admin-cat-2">Contabilidad y Tributos:</span><span class="skill-values" data-i18n-key="admin-skills-2">Estados financieros, Cumplimiento fiscal y parafiscal, Registro de operaciones, Auditorías</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="admin-cat-3">Administración y Control:</span><span class="skill-values" data-i18n-key="admin-skills-3">Control documental, Gestión de inventarios, Facturación, Presupuestos y órdenes de compra</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="admin-cat-4">Herramientas:</span><span class="skill-values" data-i18n-key="admin-skills-4">Excel avanzado (tablas dinámicas), Herramientas de ofimática, SQL (análisis de datos)</span></div>
+              <div class="skill-card reveal"><span class="skill-title" data-i18n-key="admin-cat-5">Habilidades Blandas:</span><span class="skill-values" data-i18n-key="admin-skills-5">Atención al detalle, Resolución de problemas, Organización, Trabajo en equipo, Confidencialidad</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--experience reveal" data-num="03">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">03</span></div>
+            <p class="cat-name" data-i18n-key="sec-experience-label">Experiencia</p>
+            <p class="cat-meta" data-i18n-key="sec-experience-meta">Dónde y qué he hecho</p>
+            <p class="cat-stat" data-i18n-key="sec-experience-stat">4 roles · 2018—2026</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-experience">Experiencia Profesional</h2>
+            <div class="exp-list exp-list--timeline">
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job1-date">2025 – 2026</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="admin-job0-role">Analista de Conciliaciones Bancarias</h3>
+                  <p class="job-company" data-i18n-key="admin-job0-company">Inversiones MARG, C.A</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="admin-job0-b1">Gestión de conciliaciones bancarias diarias y semanales, mediante la verificación y comparación de movimientos bancarios y registros internos.</li>
+                    <li data-i18n-key="admin-job0-b2">Control y seguimiento diario de inventarios de salida, asegurando el registro oportuno de los movimientos de mercancía y fortaleciendo la trazabilidad de las operaciones.</li>
+                    <li data-i18n-key="admin-job0-b3">Gestión, clasificación y organización de documentación financiera, facilitando la localización y disponibilidad de soportes para procesos contables, administrativos y de control interno.</li>
+                    <li data-i18n-key="admin-job0-b4">Gestión de ventas y facturación a clientes mayoristas, incluyendo la elaboración y seguimiento de documentos comerciales, registro de operaciones y control de la documentación asociada a cada venta.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job1-date">09/2025 – 06/2026</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="admin-job1-role">Analista Administrativo y Contable</h3>
+                  <p class="job-company" data-i18n-key="job1-company">Barrios y Asociados C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="admin-job1-b1">Implementación de herramientas tecnológicas y automatización de procesos basados en AI y procesos ya existentes, reduciendo los tiempos operativos en un 30%.</li>
+                    <li data-i18n-key="admin-job1-b2">Responsabilidad de declaraciones mensuales y quincenales fiscales y parafiscales de múltiples empresas.</li>
+                    <li data-i18n-key="admin-job1-b3">Implementación de herramientas tecnológicas y automatización de procesos, reduciendo los tiempos operativos en un 30%.</li>
+                    <li data-i18n-key="admin-job1-b4">Aseguramiento del manejo de información confidencial y el cumplimiento de obligaciones fiscales y parafiscales de múltiples empresas.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job2-date">2024 – 2025</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="admin-job2-role">Analista Contable</h3>
+                  <p class="job-company" data-i18n-key="job2-company">GOLF SUITES C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="admin-job2-b1">Elaboración y análisis de estados financieros mensuales, contribuyendo a la evaluación del desempeño económico.</li>
+                    <li data-i18n-key="admin-job2-b2">Control y seguimiento a cuentas por cobrar y pagar, asegurando la gestión del flujo de caja.</li>
+                    <li data-i18n-key="admin-job2-b3">Preparación de reportes financieros para la toma de decisiones gerenciales.</li>
+                    <li data-i18n-key="admin-job2-b4">Coordinación con auditorías internas y externas.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job3-date">2019 – 2023</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="admin-job3-role">Auxiliar Administrativo y Contable</h3>
+                  <p class="job-company" data-i18n-key="job3-company">MAPB C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="admin-job3-b1">Registro y conciliación de movimientos bancarios, garantizando la consistencia de la información financiera.</li>
+                    <li data-i18n-key="admin-job3-b2">Elaboración y control de facturas, presupuestos y órdenes de compra.</li>
+                    <li data-i18n-key="admin-job3-b3">Gestión y actualización de inventarios físicos y digitales.</li>
+                    <li data-i18n-key="admin-job3-b4">Administración de cobros y pagos a proveedores e implementación de sistemas de archivo físico y digital.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-axis"><span class="job-node" aria-hidden="true"></span><span class="job-date" data-i18n-key="job4-date">2018 – 2021</span></div>
+                <div class="job-main">
+                  <h3 class="job-role" data-i18n-key="admin-job4-role">Auxiliar de Administración</h3>
+                  <p class="job-company" data-i18n-key="job4-company">Carnicería Brasa y Leña C.A. — Venezuela</p>
+                  <ul class="bullets">
+                    <li data-i18n-key="admin-job4-b1">Supervisión y validación de conciliaciones bancarias.</li>
+                    <li data-i18n-key="admin-job4-b2">Organización y control de documentación contable y administrativa.</li>
+                    <li data-i18n-key="admin-job4-b3">Supervisión y actualización de inventarios.</li>
+                    <li data-i18n-key="admin-job4-b4">Manejo de información confidencial y apoyo a la mejora de procesos administrativos.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--projects reveal" data-num="04">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">04</span></div>
+            <p class="cat-name" data-i18n-key="sec-projects-label">Proyectos</p>
+            <p class="cat-meta" data-i18n-key="sec-projects-meta">Lo que construyo y comparto</p>
+            <p class="cat-stat" data-i18n-key="sec-projects-stat">GitHub · @cxsar348</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-projects">Proyectos</h2>
+            <div class="proj-list" data-github="cxsar348"></div>
+            <a class="proj-profile" href="https://github.com/cxsar348" target="_blank" rel="noreferrer noopener" data-i18n-key="projects-cta">Ver todos los proyectos en GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--education reveal" data-num="05">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">05</span></div>
+            <p class="cat-name" data-i18n-key="sec-education-label">Educación</p>
+            <p class="cat-meta" data-i18n-key="sec-education-meta">Formación y estudios</p>
+            <p class="cat-stat" data-i18n-key="sec-education-stat">3 programas activos</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-education">Educación</h2>
+            <div class="exp-list">
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu1-year">2021 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu1-degree">Contaduría Pública</h3><p class="job-company" data-i18n-key="edu1-school">UNETRANS</p></div>
+              </div>
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu2-year">2024 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu2-degree">Administración Informática</h3><p class="job-company" data-i18n-key="edu2-school">UNERS</p></div>
+              </div>
+              <div class="edu-row reveal">
+                <span class="job-date" data-i18n-key="edu3-year">2026 – Presente</span>
+                <div class="job-main"><h3 class="job-role" data-i18n-key="edu3-degree">Contaduría Pública</h3><p class="job-company" data-i18n-key="edu3-school">Universidad Central de Venezuela</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--languages reveal" data-num="06">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">06</span></div>
+            <p class="cat-name" data-i18n-key="sec-languages-label">Idiomas</p>
+            <p class="cat-meta" data-i18n-key="sec-languages-meta">Capacidad de comunicación</p>
+            <p class="cat-stat" data-i18n-key="sec-languages-stat">2 idiomas</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-languages">Idiomas</h2>
+            <div class="lang-list">
+              <div class="lang reveal">
+                <div class="lang-head">
+                  <span class="lang-name" data-i18n-key="lang-es-name">Español</span>
+                  <span class="lang-level" data-i18n-key="lang-es-level">Nativo</span>
+                </div>
+                <div class="lang-bar"><span class="lang-fill" style="--pct: 100%"></span></div>
+              </div>
+              <div class="lang reveal">
+                <div class="lang-head">
+                  <span class="lang-name" data-i18n-key="lang-en-name">Inglés</span>
+                  <span class="lang-level" data-i18n-key="lang-en-level">B1 · Intermedio</span>
+                </div>
+                <div class="lang-bar"><span class="lang-fill" style="--pct: 62%"></span></div>
+              </div>
+              <div class="lang reveal">
+                <div class="lang-head">
+                  <span class="lang-name" data-i18n-key="lang-it-name">Italiano</span>
+                  <span class="lang-level" data-i18n-key="lang-it-level">A1 · Básico</span>
+                </div>
+                <div class="lang-bar"><span class="lang-fill" style="--pct: 25%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-grid">
+          <div class="section-label section-label--references reveal" data-num="07">
+            <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">07</span></div>
+            <p class="cat-name" data-i18n-key="sec-references-label">Referencias</p>
+            <p class="cat-meta" data-i18n-key="sec-references-meta">Quién respalda mi trabajo</p>
+            <p class="cat-stat" data-i18n-key="sec-references-stat">4 contactos</p>
+          </div>
+          <div class="section-body">
+            <h2 class="print-only" data-i18n-key="sec-references">Referencias</h2>
+            <p class="reveal" data-i18n-key="references-copy">Referencias profesionales disponibles a solicitud.</p>
+            <div class="ref-list">
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">JG</span><span class="ref-info"><span class="ref-name">Jhonny Guirigay</span><span class="cat-name" data-i18n-key="contact-description1">Gerente Flor de OPS</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">RC</span><span class="ref-info"><span class="ref-name">Robert Cedeño</span><span class="cat-name" data-i18n-key="contact-description2">Gerente de Flor de OPS</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">JB</span><span class="ref-info"><span class="ref-name">Jesús Borges</span><span class="cat-name" data-i18n-key="contact-description3">Técnico informático</span></span></article>
+              <article class="ref-card reveal"><span class="ref-avatar" aria-hidden="true">EZ</span><span class="ref-info"><span class="ref-name">Edixon Zambrano</span><span class="cat-name" data-i18n-key="contact-description4">Analista de inventario</span></span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer no-print" id="contacto">
+    <div class="section-grid">
+      <div class="section-label section-label--contact reveal" data-num="08">
+        <div class="cat-top"><span class="cat-icon" aria-hidden="true"></span><span class="num">08</span></div>
+        <p class="cat-name" data-i18n-key="sec-contact-label">Contacto</p>
+        <p class="cat-meta" data-i18n-key="sec-contact-meta">Medios de contacto</p>
+        <p class="cat-stat" data-i18n-key="sec-contact-stat">5 canales</p>
+      </div>
+      <div class="section-body">
+        <p class="contact-lead reveal" data-i18n-key="contact-copy">Si te gustó mi perfil y crees que puedo encajar en tu equipo, escríbeme.</p>
+        <div class="contact-grid">
+          <a class="contact-card contact-card--email reveal" href="mailto:cesarparedesmoreno@gmail.com">
+            <span class="contact-icon" aria-hidden="true"></span>
+            <span class="contact-info"><span class="contact-label" data-i18n-key="contact-label-email">Email</span><span class="contact-value">cesarparedesmoreno@gmail.com</span></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card contact-card--phone reveal" href="tel:+584241733177">
+            <span class="contact-icon" aria-hidden="true"></span>
+            <span class="contact-info"><span class="contact-label" data-i18n-key="contact-label-phone">Teléfono</span><span class="contact-value">+58 424 173 3177</span></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card contact-card--whatsapp reveal" href="https://wa.me/qr/LJYYI2BDGCF5P1" target="_blank" rel="noreferrer noopener">
+            <span class="contact-icon" aria-hidden="true"></span>
+            <span class="contact-info"><span class="contact-label" data-i18n-key="contact-label-whatsapp">WhatsApp</span><span class="contact-value">+58 424 173 3177</span></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card contact-card--telegram reveal" href="https://t.me/cxsar348" target="_blank" rel="noreferrer noopener">
+            <span class="contact-icon" aria-hidden="true"></span>
+            <span class="contact-info"><span class="contact-label" data-i18n-key="contact-label-telegram">Telegram</span><span class="contact-value">@cxsar348</span></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-card contact-card--linkedin reveal" href="https://www.linkedin.com/in/cxsar348/" target="_blank" rel="noreferrer noopener">
+            <span class="contact-icon" aria-hidden="true"></span>
+            <span class="contact-info"><span class="contact-label" data-i18n-key="contact-label-linkedin">LinkedIn</span><span class="contact-value">in/cxsar348</span></span>
+            <span class="contact-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-meta">© 2026 César Paredes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
